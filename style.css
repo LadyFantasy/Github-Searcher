@@ -31,6 +31,9 @@
   font-size: 1.1em;
   padding: 0.1rem 1rem;
 }
+.container .form__input:focus, .container .form__button:focus {
+  outline: none;
+}
 .container .form__button {
   margin-top: 1rem;
   background-color: #11e7ff;
