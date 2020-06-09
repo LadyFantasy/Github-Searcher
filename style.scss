@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+
+
+$primary: #00b9ce;
+$button: #11e7ff;
+$button-hover: #10d8ee;
+$title: #015d68;
+$card: #00b0c3;
+$card-border: rgb(1, 153, 170);
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.container {
+    .title {
+        margin-top: 1rem;
+        color: $title;
+    }
+
+    background-color: $primary;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 21rem;
+        font-size: 1.1em;
+
+        &__input,
+        &__button {
+            height: 3rem;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.1em;
+            padding: .1rem 1rem;
+
+        }
+
+        &__button {
+            margin-top: 1rem;
+            background-color: $button;
+            color: $title;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $button-hover;
+            }
+        }
+    }
+
+
+    .form-error {
+        margin-top: 1rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .card {
+        width: 21rem;
+        height: auto;
+        margin-top: 6rem;
+        color: rgb(255, 255, 255);
+        background: $card;
+        border: solid 5px $card-border;
+        border-radius: 0.4rem;
+        text-align: center;
+        line-height: 1.15;
+
+        // &__oval {
+        //     position: relative;
+        //     top: 0rem;
+        //     transform: translate(0, -50%);
+        //     width: 10rem;
+        //     margin: 0 auto;
+        //     display: block;
+        //     border-radius: 50%;
+        //     background-color: $card-border;
+        //     padding: 5px;
+        //     transition: 0.2s;
+
+        //     &:hover {
+        //         cursor: pointer;
+        //         background-color: rgb(3, 135, 150);
+        //     }
+        // }
+
+        &__img {
+            border-radius: 100px;
+            width: 10rem;
+            height: 10rem;
+            position: relative;
+            top: 0rem;
+            transform: translate(0, -50%);
+            border: solid 5px $card-border;
+
+        }
+
+        &__h2 {
+            font-size: 1.9em;
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            margin-bottom: 1rem;
+            margin-top: -4rem;
+
+            &:hover {
+                color: lighten($button-hover, 30%);
+            }
+        }
+
+        &__dl {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: .7rem;
+        }
+
+        &__dt {
+            font-weight: 900;
+            margin-bottom: .3rem;
+            font-size: 1.1em;
+        }
+    }
+}

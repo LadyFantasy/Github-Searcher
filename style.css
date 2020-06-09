@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.container {
+  background-color: #00b9ce;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .title {
+  margin-top: 1rem;
+  color: #015d68;
+}
+.container .form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 21rem;
+  font-size: 1.1em;
+}
+.container .form__input, .container .form__button {
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+  padding: 0.1rem 1rem;
+}
+.container .form__button {
+  margin-top: 1rem;
+  background-color: #11e7ff;
+  color: #015d68;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.container .form__button:hover {
+  background-color: #10d8ee;
+}
+.container .form-error {
+  margin-top: 1rem;
+  color: white;
+}
+.container .card {
+  width: 21rem;
+  height: auto;
+  margin-top: 6rem;
+  color: white;
+  background: #00b0c3;
+  border: solid 5px #0199aa;
+  border-radius: 0.4rem;
+  text-align: center;
+  line-height: 1.15;
+}
+.container .card__img {
+  border-radius: 100px;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  top: 0rem;
+  transform: translate(0, -50%);
+  border: solid 5px #0199aa;
+}
+.container .card__h2 {
+  font-size: 1.9em;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  margin-top: -4rem;
+}
+.container .card__h2:hover {
+  color: #9ef0f9;
+}
+.container .card__dl {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.7rem;
+}
+.container .card__dt {
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=style.css.map */
