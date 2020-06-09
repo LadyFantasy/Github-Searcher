@@ -15,6 +15,7 @@ const followers = document.querySelector(".followers")
 card.style.display = "none"
 
 async function getUser() {
+    event.preventDefault()
     if (input.value) {
         try {
             const endpoint = await fetch(`https://api.github.com/users/${input.value}`);
